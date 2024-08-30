@@ -1,0 +1,16 @@
+
+D:\git-projects\mern-task (mern-task@1.0.0)
+λ npm install mongoose@latest
+
+cors install
+
+D:\git-projects\mern-task (mern-task@1.0.0)
+λ npm install cors --save
+npm install dotenv
+
+run:
+D:\git-projects\mern-task\backend (backend@1.0.0)
+λ npm start  (postman chk get:http://localhost:4000/api/tasks/)if work chk frontend
+
+D:\git-projects\mern-task\frontend 
+λ npm start ( 3000portchrome)
