@@ -4,13 +4,26 @@ D:\git-projects\mern-task (mern-task@1.0.0)
 
 cors install
 
-D:\git-projects\mern-task (mern-task@1.0.0)
 λ npm install cors --save
 npm install dotenv
 
 run:
-D:\git-projects\mern-task\backend (backend@1.0.0)
-λ npm start  (postman chk get:http://localhost:4000/api/tasks/)if work chk frontend
 
-D:\git-projects\mern-task\frontend 
-λ npm start ( 3000portchrome)
+Create or Update package.json in Root Folder: In your root folder (D:\git-projects\mern-task), you might already have a package.json. If not, create one by running:
+cd D:\git-projects\mern-task
+1.npm init -y
+
+Install concurrently: Install concurrently, which will allow you to run both the backend and frontend simultaneously.
+2.D:\git-projects\mern-task npm install concurrently --save
+Modify the package.json in the Root Folder: In the root folder’s package.json, modify the "scripts" section to add the following:
+package.json:main
+3."scripts": {
+  "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\""
+}
+4.Run Both Frontend and Backend: Now you can run both the frontend and backend with this single command from the root folder:
+cd D:\git-projects\mern-task
+npm start
+ error:
+set NODE_OPTIONS=--openssl-legacy-provider  error:--openssl-legacy-provider 
+node_modules remove:
+git rm -r --cached node_modules
